@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9A3-Hockeys</title>
+    <!-- manrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/8e0f7dac2a.js" crossorigin="anonymous"></script>
+
+    <!-- daisu UI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind install  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#FF4240',
+                        'primary-secondary': '#131318',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-family{
+            font-family: 'Manrope', sans-serif;
+        }
+        .container{
+        max-width: 1170px;
+        width: 98%;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                      <li><a >Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="font-extrabold text-3xl">Hockey<span class="text-primary-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="flex flex-row space-x-11 text-base font-normal ">
+                      <li><a class="text-primary-color">Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex flex-row gap-10">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                   <a class="bg-primary-color px-3 py-3 lg:px-9 lg:py-3 rounded-lg text-white">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main class="container mx-auto lg:my-16">
+
+        <!-- carousel section  -->
+        <section class="m-3">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item flex flex-col gap-3 relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="lg:w-[502px] h-auto bg-primary-secondary lg:p-8 p-6 text-white lg:absolute rounded-2xl lg:top-[30.5rem] lg:left-[60.5rem] space-y-3">
+                    <h3 class="lg:text-2xl text-sm font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="lg:text-base text-xs text-[#FFFFFF] opacity-65  font-medium">Hi, This our proudful heroes.We created our team for future player. We have al rounder Shakib All Hasan </p>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="lg:w-[502px] h-auto bg-primary-secondary lg:p-8 p-6 text-white lg:absolute rounded-2xl lg:top-[30.5rem] lg:left-[60.5rem] space-y-4">
+                    <h3 class="lg:text-2xl text-sm font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="lg:text-base text-xs text-[#FFFFFF] opacity-65 font-medium">Hi, This our proudful heroes.We created our team for future player. We have al rounder Shakib All Hasan </p>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="lg:w-[502px] h-auto bg-primary-secondary lg:p-8 p-6 text-white lg:absolute rounded-2xl lg:top-[30.5rem] lg:left-[60.5rem] space-y-3">
+                    <h3 class="lg:text-2xl text-sm font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="lg:text-base text-xs text-[#FFFFFF] opacity-65  font-medium">Hi, This our proudful heroes.We created our team for future player. We have al rounder Shakib All Hasan </p>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/1.png" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="lg:w-[502px] h-auto bg-primary-secondary lg:p-8 p-6 text-white lg:absolute rounded-2xl lg:top-[30.5rem] lg:left-[60.5rem] space-y-3">
+                    <h3 class="lg:text-2xl text-sm font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="lg:text-base text-xs text-[#FFFFFF] opacity-65  font-medium">Hi, This our proudful heroes.We created our team for future player. We have al rounder Shakib All Hasan </p>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Professional Hockeys Club -->
+        <section class="lg:my-10 m-3">
+          <div class="flex flex-col justify-center items-center space-y-4 mb-8">
+            <h3 class="lg:text-4xl text-2xl font-extrabold  text-center">Professional Hockeys Club</h3>
+            <p class="lg:text-[#131318] text-sm font-medium text-center lg:w-[606px]">It is Bangladesh's first ever franchise-based professional field hockey league. It is administrated by BHF and organized by ACE. It was formed in 2022</p>
+          </div>
+          <div class="lg:my-4 lg:p-5 flex flex-col lg:gap-20 gap-10  justify-between items-center lg:flex-row ">
+            <div class="flex flex-col justify-center items-center">
+              <div class=" radial-progress text-[red]" style="--value:87;" role="progressbar">87%
+              </div> 
+              <div class="flex flex-col items-center">
+                <h4 class="lg:text-xl text-base pt-4 font-semibold ">Prayer Facility</h4>
+                <p class="lg:text-base text-sm pt-4 font-normal">In permanent campus,room no: 214 is used  as prayer room</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class=" radial-progress text-[green]" style="--value:95;" role="progressbar">95%
+              </div> 
+              <div class="flex flex-col items-center">
+                <h4 class="lg:text-xl text-base pt-4 font-semibold ">Prayer Facility</h4>
+                <p class="lg:text-base text-sm pt-4 font-normal">In permanent campus,room no: 214  is used  as prayer room</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class=" radial-progress text-[yellow]" style="--value:90;" role="progressbar">90%
+              </div> 
+              <div class="flex flex-col items-center">
+                <h4 class="lg:text-xl text-base pt-4 font-semibold ">Prayer Facility</h4>
+                <p class="lg:text-base text-sm pt-4 font-normal">In permanent campus,room no: 214  is used  as prayer room</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div class=" radial-progress text-[blue]" style="--value:80;" role="progressbar">80%
+              </div> 
+              <div class="flex flex-col items-center">
+                <h4 class="lg:text-xl text-base pt-4 font-semibold ">Prayer Facility</h4>
+                <p class="lg:text-base text-sm pt-4 font-normal">In permanent campus,room no: 214  is used  as prayer room</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Program Sections  -->
+        <section class="lg:my-10 m-3">
+          <div class="flex flex-col justify-center items-center space-y-4 mb-8">
+            <h3 class="lg:text-4xl text-2xl font-extrabold  text-center">Program Sections</h3>
+            <p class="lg:text-[#131318] text-sm font-medium text-center lg:w-[606px]">Get the latest Bangladesh team schedules, fixtures and results and stay updated with the progress of Bangladesh Cricket team</p>
+
+            <!-- Hero duisy ul use  -->
+            <div class=" grid grid-cols-1 gap-10 lg:grid-cols-2">
+              <div class="hero lg:w-[725px] lg:h-[338px] rounded-2xl" style="background-image: url(Images/2.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-start text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-2xl text-lg font-extrabold">Teenager Program</h1>
+                    <p class="mb-5 lg:text-base text-xs font-medium">It's a unique experience for the local teens and the group from Haarlem to have a week long encounter together of Bible study, songs and some great sports</p>
+                    <button class="bg-primary-color px-4 py-2 rounded-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="hero lg:w-[725px] lg:h-[338px] rounded-2xl" style="background-image:url(Images/3.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-start text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-2xl text-lg font-extrabold">Junior Program</h1>
+                    <p class="mb-5 lg:text-base text-xs font-medium">The Junior Professional Associate (JPA) program is a unique opportunity to gain entry-level professional experience and first-hand exposure to the challenges.</p>
+                    <button class="bg-primary-color px-4 py-2 rounded-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="hero lg:col-span-2 lg:w-[1490px] lg:h-[450px] rounded-2xl" style="background-image: url(Images/4.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-start text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-2xl text-lg font-extrabold">Professional Program</h1>
+                    <p class="mb-5 lg:text-base text-xs font-medium">The WBG YPP is a two-year leadership development program at the start of a five-year employment contract with the World Bank, IFC or MIGA.</p>
+                    <button class="bg-primary-color px-4 py-2 rounded-lg">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Our New Products -->
+        <section>
+          <div class="flex flex-col justify-center items-center space-y-4 mb-8">
+            <h3 class="lg:text-4xl text-2xl font-extrabold  text-center">Our New Products</h3>
+            <p class="lg:text-[#131318] text-sm font-medium text-center lg:w-[606px]">Recent Products · SG Maxxum Cricket Socks · SG Proflex Cricket Thigh Pad · SG Hilite White Wicket Keeping Gloves W.K . Gloves · SG Prosoft synthetic Cricket Ball </p>
+          </div>
+
+          <div>
+            <div class="grid lg:grid-cols-2 grid-cols-1 p-4 gap-6">
+              <div class="flex flex-col lg:flex-row gap-6">
+                <!-- product one -->
+                <div>
+                  <img class="w-[287px] lg:w-[180px]" src="Images/5.png" alt="Movie"/>
+                </div>
+                <div class="">
+                  <div class="flex flex-row gap-4 items-center ">
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="text-[yellow] fa-solid fa-star"></i>
+                      <p>5.0</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-star"></i>
+                      <p>20</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p> 
+                    </div>
+                  </div>
+                  <h2 class="my-3 text-xl font-extrabold ">World Cup Flags Football</h2>
+                  <p class="text-base font-medium">It is played on a
+                    rectangular ice rink, with two teams of six players each.</p>
+                  <div class="my-3 flex flex-row gap-2">
+                    <h2 class="text-primary-color">Price - $22.00</h2>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <h2>Delivery Fee : Free</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-6">
+                <!-- product two -->
+                <div>
+                  <img class="w-[287px] lg:w-[180px]" src="Images/6.png" alt="Movie"/>
+                </div>
+                <div class="">
+                  <div class="flex flex-row gap-4 ">
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="text-[yellow] fa-solid fa-star"></i>
+                      <p>5.0</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-star"></i>
+                      <p>20</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p> 
+                    </div>
+                  </div>
+                  <h2 class="my-3 text-xl font-extrabold">World Cup Flags Football</h2>
+                  <p class="text-base font-medium">It is played on a
+                    rectangular ice rink, with two teams of six players each.</p>
+                  <div class="my-3 flex flex-row gap-2">
+                    <h2 class="text-primary-color">Price - $22.00</h2>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <h2>Delivery Fee : Free</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-6">
+                <!-- product three -->
+                <div>
+                  <img class="w-[287px] lg:w-[180px]" src="Images/7.png" alt="Movie"/>
+                </div>
+                <div class="">
+                  <div class="flex flex-row gap-4 ">
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="text-[yellow] fa-solid fa-star"></i>
+                      <p>5.0</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-star"></i>
+                      <p>20</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p> 
+                    </div>
+                  </div>
+                  <h2 class="my-3 text-xl font-extrabold">World Cup Flags Football</h2>
+                  <p class="text-base font-medium">It is played on a
+                    rectangular ice rink, with two teams of six players each.</p>
+                  <div class="my-3 flex flex-row gap-2">
+                    <h2 class="text-primary-color">Price - $22.00</h2>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <h2>Delivery Fee : Free</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-6">
+                <!-- product fourth -->
+                <div>
+                  <img class="w-[287px] lg:w-[180px]" src="Images/8.png" alt="Movie"/>
+                </div>
+                <div class="">
+                  <div class="flex flex-row gap-4 ">
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="text-[yellow] fa-solid fa-star"></i>
+                      <p>5.0</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-star"></i>
+                      <p>20</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p> 
+                    </div>
+                  </div>
+                  <h2 class="my-3 text-xl font-extrabold">World Cup Flags Football</h2>
+                  <p class="text-base font-medium">It is played on a
+                    rectangular ice rink, with two teams of six players each.</p>
+                  <div class="my-3 flex flex-row gap-2">
+                    <h2 class="text-primary-color">Price - $22.00</h2>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <h2>Delivery Fee : Free</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-6">
+                <!-- product fifth -->
+                <div>
+                  <img class="w-[287px] lg:w-[180px]" src="Images/9.png" alt="Movie"/>
+                </div>
+                <div class="">
+                  <div class="flex flex-row gap-4 ">
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="text-[yellow] fa-solid fa-star"></i>
+                      <p>5.0</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-star"></i>
+                      <p>20</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p> 
+                    </div>
+                  </div>
+                  <h2 class="my-3 text-xl font-extrabold">World Cup Flags Football</h2>
+                  <p class="text-base font-medium">It is played on a
+                    rectangular ice rink, with two teams of six players each.</p>
+                  <div class="my-3 flex flex-row gap-2">
+                    <h2 class="text-primary-color">Price - $22.00</h2>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <h2>Delivery Fee : Free</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row gap-6">
+                <!-- product sixth -->
+                <div>
+                  <img class="w-[287px] lg:w-[180px]" src="Images/10.png" alt="Movie"/>
+                </div>
+                <div class="">
+                  <div class="flex flex-row gap-4 ">
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="text-[yellow] fa-solid fa-star"></i>
+                      <p>5.0</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-star"></i>
+                      <p>20</p> 
+                    </div>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <p>200</p> 
+                    </div>
+                  </div>
+                  <h2 class="my-3 text-xl font-extrabold">World Cup Flags Football</h2>
+                  <p class="text-base font-medium">It is played on a
+                    rectangular ice rink, with two teams of six players each.</p>
+                  <div class="my-3 flex flex-row gap-2">
+                    <h2 class="text-primary-color">Price - $22.00</h2>
+                    <div class="flex flex-row gap-1 items-center">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <h2>Delivery Fee : Free</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+</body>
+
+</html>
