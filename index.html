@@ -449,11 +449,11 @@
           your customers · What can my company do to better serve your needs? · How satisfied are you with our
           products/services?</p>
 
-        <div class="flex lg:flex-row flex-col my-2">
+        <div class="flex lg:flex-row flex-col gap-10 p-8 rounded-2xl my-2">
           <!-- client image  -->
-          <div>
-            <img class="lg:w-[441px] w-[400px] lg:h-[470px] h-[280px] p-8 rounded-2xl" src="Images/11.png" alt="">
-          </div>
+          <!-- ml-11 w-3/4 lg:max-w-sm rounded-lg shadow-2xl  -->
+            <img class="" src="Images/11.png" alt="">
+         
           <!-- Accordion  -->
           <div class="">
             <div class="collapse collapse-plus lg:py-3">
@@ -514,7 +514,8 @@
           your customers · What can my company do to better serve your needs? · How satisfied are you with our
           products/services?</p>
         <div>
-          <!-- contract information  -->
+          <div class="flex flex-col lg:flex-row gap-6">
+             <!-- contract information  -->
           <div class="border border-[rgba(19,19,24,0.1)] p-6 lg:p-[50px] rounded-2xl flex flex-col lg:w-[474px] gap-6">
             <div class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(188,237,109,0.10)] px-8 pt-8 pb-12 rounded-2xl">
               <img class="max-w-12" src="Images/Group 1171275317.png" alt="">
@@ -536,10 +537,40 @@
             </div>
           </div>
 
-          <!-- input section  -->
-          <div>
+           <!-- input section  -->
+           <div class="flex flex-col gap-6">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="flex flex-col gap-4">
+                <label class="text-black text-xl font-bold" for="name">Your Name</label>
+                <input class="bg-[rgba(19, 19, 24, 0.30)] pl-5 max-w-80 pr-20 py-5 rounded-x text-lg" type="text" placeholder="Enter your full name">
+              </div>
+              <div class="flex flex-col gap-4">
+              <label class="text-black text-xl font-bold" for="name">Your Email</label>
+                <input class="bg-[rgba(19, 19, 24, 0.30)] pl-5 max-w-80 pr-20 py-5 rounded-x text-lg" type="text" placeholder="Enter your Email">
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="flex flex-col gap-4">
+                <label class="text-black text-xl font-bold" for="name">Subject</label>
+                <input class="bg-[rgba(19, 19, 24, 0.30)] pl-5 max-w-80 pr-20 py-5 rounded-x text-lg" type="text" placeholder="Enter your Subject">
+              </div>
+              <div class="flex flex-col gap-4">
+              <label class="text-black text-xl font-bold" for="name">Phone Number</label>
+                <input class="bg-[rgba(19, 19, 24, 0.30)] pl-5 max-w-80 pr-20 py-5 rounded-x text-lg" type="text" placeholder="Enter your Number">
+              </div>
+            </div>
 
+            <div class="flex flex-col gap-4">
+              <label class="text-black text-xl font-bold" for="name">Massage</label>
+                <textarea class="bg-[rgba(19, 19, 24, 0.30)] h-96 pl-5 rounded-xl text-[rgba(19, 19, 24, 0.30)]" type ="text" placeholder="write your message"></textarea>
+              </div>
+              <button class="mt-2 rounded-xl py-4 px-6 bg-[#FF4240] text-white text-xl font-bold">Message</button>
           </div>
+          </div>
+         
+
+         
+         
         </div>
 
     </section>
@@ -568,10 +599,68 @@
     </section>
   </main>
 
-  <!-- footer  -->
-  <footer>
-    
-  </footer>
+  <!-- footer 
+  <footer class="container lg:my-16 bg-black ">
+    <div>
+      <div>
+        <h3 class="text-white text-2xl font-extrabold">Get In Touch</h3>
+        <p class="text-white">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p>hockeys@support.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <footer class="bg-[#131318] py-24">
+    <div class="container m-auto">
+      <footer class="footer p-10  text-base-content">
+       
+        <nav class="mx-auto">
+          <header class="footer-title text-2xl block items-center justify-center text-[#FFF] font-bold pb-6  lg:text-left text-center">Get In Touch</header>
+          <p class="text-base text-[#FFFFFF99] font-medium lg:w-[346px] pb-6 lg:text-left ">Our first priority is our client. Our services is avilavil all time. </p>
+          <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center"><i class="fa-solid fa-envelope text-[#FF4240] "></i> hockeys@support.com</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center"><i class="fa-solid fa-phone text-[#FF4240]"> </i> (+62) 123-321-543</a>
+
+        
+        </nav> 
+      
+        <div class="flex  justify-between mx-auto gap-40">
+          <nav class="mx-auto">
+            <header class="footer-title text-2xl text-[#FFF] font-bold pb-6 lg:text-left text-center">Company</header> 
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">About us</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Leadership</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Careers</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">areers News & Article</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Legal Notice</a>
+          </nav> 
+          <nav class="mx-auto">
+            <header class="footer-title text-2xl text-[#FFF] font-bold pb-6 lg:text-left text-center">Support</header> 
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Help Center</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">FAQ</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Ticket Support</a>
+            <a class="link link-hover block items-center justify-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Contact Us</a>
+          </nav> 
+        </div>
+
+      
+        <nav  class="block items-center justify-center m-auto">
+          <header class="footer-title text-2xl block items-center justify-center text-[#FFF] font-bold pb-6  lg:text-left text-center">Services</header> 
+     
+            <a class="link link-hover block justify-center items-center text-base text-[#FFFFFF99]  font-medium pb-2 lg:text-left text-center">Academy</a>
+          <a class="link link-hover block justify-center items-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Group Lesson</a>
+          <a class="link link-hover block justify-center items-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Private Lesson</a>
+          <a class="link link-hover block justify-center items-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Hockeys for kids</a>
+          <a class="link link-hover block justify-center items-center text-base text-[#FFFFFF99] font-medium pb-2 lg:text-left text-center">Hockeys for Adult</a>
+      
+       
+        </nav>
+      </footer>
 </body>
 
 </html>
